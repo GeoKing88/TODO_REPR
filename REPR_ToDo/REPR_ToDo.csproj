@@ -7,8 +7,23 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="ToDos\Delete" />
-      <Folder Include="ToDos\Update" />
+      <Compile Remove="ToDos\Delete\**" />
+      <Compile Remove="ToDos\Update\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="ToDos\Delete\**" />
+      <EmbeddedResource Remove="ToDos\Update\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="ToDos\Delete\**" />
+      <None Remove="ToDos\Update\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="ToDos\Delete\**" />
+      <Content Remove="ToDos\Update\**" />
     </ItemGroup>
 
 </Project>

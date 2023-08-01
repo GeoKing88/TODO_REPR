@@ -1,9 +1,7 @@
 namespace REPR_ToDo.ToDos.Create;
 
-public record Response(
-        int Id,
+public record Request(
         string Title,
         DateOnly? DueDate,
-        string Author,
-        bool IsActive
+        string Author
 );
